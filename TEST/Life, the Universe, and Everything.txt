@@ -1,0 +1,28 @@
+Life, the Universe, and Everything
+
+
+All submissions for this problem are available.
+
+For help on this problem, please check out our tutorial Input and Output (I/O)
+
+Your program is to use the brute-force approach in order to find the Answer to Life, the Universe, and Everything. More precisely... rewrite small numbers from input to output. Stop processing input after reading in the number 42. All numbers at input are integers of one or two digits.
+Example
+
+
+Input:
+1
+2
+88
+42
+99
+
+Output:
+1
+2
+88
+Author:	admin
+Tags:	admin cakewalk conditions input
+Date Added:	23-02-2009
+Time Limit:	2.95918 sec
+Source Limit:	50000 Bytes
+Languages:	ADA, ASM, BASH, BF, C, C99 strict, CAML, CLOJ, CLPS, CPP 4.3.2, CPP 4.9.2, CPP14, CS2, D, ERL, FORT, FS, GO, HASK, ICK, ICON, JAVA, JS, LISP clisp, LISP sbcl, LUA, NEM, NICE, NODEJS, PAS fpc, PAS gpc, PERL, PERL6, PHP, PIKE, PRLG, PYPY, PYTH, PYTH 3.1.2, RUBY, SCALA, SCM chicken, SCM guile, SCM qobi, ST, TCL, TEXT, WSPC
