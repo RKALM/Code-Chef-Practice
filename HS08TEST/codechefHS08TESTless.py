@@ -9,7 +9,7 @@ def isdivby5(num):
                 return False
 
 def withdraw(amount, account):
-        if float(amount) >= float(account) or float(account) < 5.4:
+        if float(amount) >= float(account):
                 return float(account)
         else:
                 if float(account) > 0.5:
@@ -17,16 +17,13 @@ def withdraw(amount, account):
                                 if isdivby5(float(amount)):
                                         account = float(account) - float(amount)
                                         account = float(account) - 0.5
-                                        if float(amount)<10:
-                                                return float(account) + 0.5
-                                        else:
-                                                return float(account)
+                                        return account
                                         amount = 0
                                 else:
-                                        amount = float(amount) - 0.5
+                                        return account
                 
 
 for line in sys.stdin:
         happylist = line.split()
-        print("%.2f" % withdraw(happylist[0],happylist[1]))
+        print("%.2f" %  withdraw(happylist[0],happylist[1]))
         
