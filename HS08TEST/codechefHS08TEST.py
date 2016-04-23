@@ -17,7 +17,10 @@ def withdraw(amount, account):
                                 if isdivby5(float(amount)):
                                         account = float(account) - float(amount)
                                         account = float(account) - 0.5
-                                        return account
+                                        if float(amount)<10:
+                                                return float(account) + 0.5
+                                        else:
+                                                return account
                                         amount = 0
                                 else:
                                         amount = float(amount) - 0.5
