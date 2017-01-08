@@ -1,36 +1,28 @@
 import sys
 
-firstlineiszero=0
-templist = list()
+itIsTheFirstLine = True
+arrayNList = list()
 counter = 0
 firstint = 0
-k1=0
-t1=0
-count=0
+setN=0
+N1=0
+N2=0
 
-def tiisdividedbyk(t,k):
-        if int(t)%int(k) == int(0):
+def n1N2BalanceChecker(N1,N2):
+        if int(N1) <= int(N2):
                 return True
+            
+def functionZ(N1,N2):
+    if n1N2BalanceChecker(N1,N2):
+        return float(N1) * float(N2)
 
+def firstLineDetection(inputForNInitiation):
+    itIsTheFirstLine = False
+    setN = inputForNInitiation
+    
 
-for line in sys.stdin:
-    if firstlineiszero == 0:
-        firstlineiszero +=1
-        templist = line.split()
-        firstint = templist[0]
-        k1=templist[1]
-    else:
-        t1=line
-        if counter+1 < int(firstint):
-                counter += 1
-                if tiisdividedbyk(t1,k1) == True:
-                        count += 1
-        else:
-                if tiisdividedbyk(t1,k1) == True:
-                        count += 1
-                        print(count)
-                else:
-                        print(count)
+for N in sys.stdin:
+
 
 print(count)
 
