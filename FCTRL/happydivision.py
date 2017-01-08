@@ -11,9 +11,9 @@ def n1N2BalanceChecker(N1):
         if int(N1) > 0:
                 return True
             
-def functionZ(N1,N2):
+def functionZ(N1):
     if n1N2BalanceChecker(N1):
-        return float(N1) * float(N2)
+        return int(N1)
 
 def firstLineCorrection(inputForNInitiation):
     global itIsTheFirstLine
@@ -28,14 +28,15 @@ for N in sys.stdin:
         firstLineCorrection(N)
     else:
         if N < setN:
-            result = functionZ(int(N),int(N)+1)
+            result = int(N) + functionZ(int(N))
             print("the setN now is " + str(setN))
             print ("the N now is " + str(N))
+        else:
+            print(result)
  
         
 
 
-print(result)
 
 
 
