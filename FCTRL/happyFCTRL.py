@@ -6,14 +6,18 @@ setN=0
 N1=0
 N2=0
 result = "Not any result right now"
-
-def n1N2BalanceChecker(N1):
-        if int(N1) > 0:
-                return True
             
 def functionZ(N1):
-    if n1N2BalanceChecker(N1):
-        return int(N1)
+    reminder = 1.1
+    i = 1
+    while float(reminder) > 1.0:
+        ZN1 = float(N1) / float(5^i)
+        reminder = float(N1) - float(ZN1)
+        i+=1
+        ZN2 =+ int(ZN1)
+    return ZN2
+        
+    
 
 def firstLineCorrection(inputForNInitiation):
     global itIsTheFirstLine
@@ -27,13 +31,14 @@ for N in sys.stdin:
     if itIsTheFirstLine == True:
         firstLineCorrection(N)
     else:
-        if N < setN:
-            result = int(N) + functionZ(int(N))
+        if N <= setN:
+            result = functionZ(int(N))
             print("the setN now is " + str(setN))
             print ("the N now is " + str(N))
+            print("The result is " + str(result))
         else:
-            print(result)
- 
+            print("That's all folks!")
+            #here i need to kill the function
         
 
 
