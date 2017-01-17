@@ -6,6 +6,11 @@ setN=0
 N1=0
 N2=0
 result = "Not any result right now"
+
+#there is always something to check
+def mainCheckFunction(checkFunctionsProperty1, checkFunctionsProperty2):
+        if checkFunctionsProperty1 / 5 >= 1.0:
+                return True
             
 def functionZ(N1):
     reminder = 1.1
@@ -13,6 +18,7 @@ def functionZ(N1):
     ZN1 = 1
     ZN2 = 0
     while float(reminder) > 1.0:
+#    while mainCheckFunction(float(N1),float(i)):
         print("Now I will divine " + str(N1) + " with " + str(5**i))
         ZN1 = float(N1) / float(5**i)
         print("the Z1 now is " + str(ZN1))
