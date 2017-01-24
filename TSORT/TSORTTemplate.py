@@ -42,8 +42,8 @@ for N in sys.stdin:
             mainlist.sort()
             result = str(mainlist)
             #print("the result of the main calculative fuction know as mainCalculativFunction() now is " + result)
-            for i in mainlist:
-                print(str(mainlist[i-1]))
+            for i in range(int(T)):
+                print(str(mainlist[i]))
         
 
 
