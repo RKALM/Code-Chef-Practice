@@ -27,18 +27,23 @@ def firstLineCorrection(inputForNInitiation):
 def iterationsCheck(hereGoesTheCountForTParameter):
     if hereGoesTheCountForTParameter >= int(T):
         return True
-    
 
-for N in sys.stdin:
-    print("itIsTheFirstLine now is " + str(itIsTheFirstLine))
-    if itIsTheFirstLine == True:
-        firstLineCorrection(N)
-    else:
-        result = mainCalculativFunction(N)
-        countForT += 1
-        print("the T which represent the number of lines with input data, now is " + str(T))        
-        if iterationsCheck(countForT):
-            print("the result of the main calculative fuction know as mainCalculativFunction() now is " + result)
+#The main iteration, (AKA the main loop), now is the main() function. 
+#The separation of code to functions blocks keeps the template simple and clear.    
+def main():
+    global countForT
+    for N in sys.stdin:
+        print("itIsTheFirstLine now is " + str(itIsTheFirstLine))
+        if itIsTheFirstLine == True:
+            firstLineCorrection(N)
         else:
-            print ("the N now which is the value of the last input now is " + str(N))
+            result = mainCalculativFunction(N)
+            countForT += 1
+            print("the T which represent the number of lines with input data, now is " + str(T))        
+            if iterationsCheck(countForT):
+                print("the result of the main calculative fuction know as mainCalculativFunction() now is " + result)
+            else:
+                print ("the N now which is the value of the last input now is " + str(N))
+                
+if __name__ == "__main__": main()
         
