@@ -28,6 +28,14 @@ def iterationsCheck(hereGoesTheCountForTParameter):
     if hereGoesTheCountForTParameter >= int(T):
         return True
 
+#My first thought was to use "for in" loop but after using it I figured out that the use of Range is the best solution.
+#As I know, a loop with range is more efficient than the typical "for in" loop.
+#Use this function in case of sorting, or in the case of temparated array. you will not regret it.    
+def printFromArray(Arrayname, probablytheTVariable):
+    for i in range(int(probablytheTVariable)):
+        print(str(Arrayname[i]))
+
+
 #The main iteration, (AKA the main loop), now is the main() function. 
 #The separation of code to functions blocks keeps the template simple and clear.    
 def main():
