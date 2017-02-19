@@ -100,21 +100,23 @@ def compareWinners(oldWinner, newWinner):
 def main():
     global countForT
     for N in sys.stdin:
-        print("itIsTheFirstLine now is " + str(itIsTheFirstLine))
+        #print("itIsTheFirstLine now is " + str(itIsTheFirstLine))
         if itIsTheFirstLine == True:
             firstLineCorrection(N)
         else:
             result = mainCalculativFunction(N)
             countForT += 1
-            print("the T which represent the number of lines with input data, now is " + str(T))        
+            #print("the T which represent the number of lines with input data, now is " + str(T))        
             if iterationsCheck(countForT):
                 #here add code when the answer comes in the end as a final result.
-                printFromArray(spliterFunctionsArray, countForT)
-                print("the result of the main calculative fuction know as mainCalculativFunction() now is " + result)
-            else:
+                #printFromArray(spliterFunctionsArray, countForT)
+                #print("the result of the main calculative fuction know as mainCalculativFunction() now is " + result)
+                print(str(result))
+            #else:
                 #Here add code if there are many answers that are coming separately with every iteration.
-                printFromArray(spliterFunctionsArray, countForT)
-                print ("the N now which is the value of the last input now is " + str(N))
+                #printFromArray(spliterFunctionsArray, countForT)
+                #print ("the N now which is the value of the last input now is " + str(N))
+
                 
 if __name__ == "__main__": main()
         
