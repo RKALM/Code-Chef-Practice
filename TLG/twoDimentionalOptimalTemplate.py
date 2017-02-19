@@ -19,7 +19,6 @@ def mainCalculativFunction(inputProperty):
     global testSum #This is used to make the mainCheckFunction() bit more interesting but making it to work as add function.
     if mainCheckFunction(True):
         spliterFunction(inputProperty)
-        #testSum = int(spliterFunctionsArray[countForT][0]) + int(spliterFunctionsArray[countForT][1])
         testSum = testSum + twoDimentionalArrayHandler(spliterFunctionsArray, countForT)
         return str(testSum)
 
