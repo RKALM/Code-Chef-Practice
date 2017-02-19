@@ -39,7 +39,12 @@ def iterationsCheck(hereGoesTheCountForTParameter):
 def printFromArray(Arrayname, probablytheTVariable):
     for i in range(int(probablytheTVariable)):
         print(str(Arrayname[i]))
-
+        
+#fills a two-dimensional array with the value N, (the line from the input).
+#it needs to get called for every line from the main iteration, (for every N)        
+def spliterFunction(strValueFromN):
+    global spliterFunctionsArray
+    spliterFunctionsArray.append(strValueFromN.split(' ')) 
 
 #The main iteration, (AKA the main loop), now is the main() function. 
 #The separation of code to functions blocks keeps the template simple and clear.    
