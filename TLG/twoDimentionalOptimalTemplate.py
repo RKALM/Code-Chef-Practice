@@ -7,6 +7,7 @@ testSum = 0 #This is used to make the mainCheckFunction() bit more interesting b
 countForT = 0 #this is the count vairiable that helps to check that the iterations are not more than the predefined T variable.
 spliterFunctionsArray = [] #This array is meant to be a multidimentional array for splitted values
 oldLead = 0
+oldWinner = 0
 
 #the mainCheckFunction() function is doing the necessary checking before the mainCalculativFunction().
 #there is always something to check
@@ -57,14 +58,18 @@ def spliterFunction(strValueFromN):
 #it works optimaly inside the mainCalculativFunction()
 #initialy works as sum function
 def twoDimentionalArrayHandler(arrayNameParameter, Iterationsnumber):
-    global oldLead
+    global oldLead, oldWinner
     player1 = int(arrayNameParameter[Iterationsnumber][0])
     player2 = int(arrayNameParameter[Iterationsnumber][1])
     newLead = abs(int(arrayNameParameter[Iterationsnumber][0]) - int(arrayNameParameter[Iterationsnumber][1]))
     oldLead2 = oldLead
     oldLead = compareLeads(oldLead2, newLead)
+    newWinner = compareTwoPlayers(player1, player2)
+    oldWinner2 = oldWinner
+    if (oldLead <= newLead):
+        oldWinner = compareWinners(oldWinner2, newWinner)
     if compareTwoPlayers(player1, player2) != 0:
-        return str(compareTwoPlayers(player1, player2)) + " " + str(oldLead)
+        return str(oldWinner) + " " + str(oldLead)
     else:
         return result
     
@@ -82,6 +87,12 @@ def compareLeads(oldLead, newLead):
         return oldLead
     else:
         return newLead
+    
+def compareWinners(oldWinner, newWinner):
+    if oldWinner > newWinner:
+        return oldWinner
+    else:
+        return newWinner
 
 
 #The main iteration, (AKA the main loop), now is the main() function. 
