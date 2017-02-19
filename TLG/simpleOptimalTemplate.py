@@ -19,7 +19,7 @@ def mainCalculativFunction(inputProperty):
     global testSum #This is used to make the mainCheckFunction() bit more interesting but making it to work as add function.
     if mainCheckFunction(True):
         spliterFunction(inputProperty)
-        testSum = int(inputProperty) + testSum
+        testSum = int(spliterFunctionsArray[countForT][0]) + int(spliterFunctionsArray[countForT][1])
         return str(testSum)
 
 
