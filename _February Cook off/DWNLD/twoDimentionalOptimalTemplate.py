@@ -6,21 +6,27 @@ result = "Not any result right now" #this is used for the result wich is printed
 testSum = 0 #This is used to make the mainCheckFunction() bit more interesting but making the function to work as add function.
 countForT = 0 #this is the count vairiable that helps to check that the iterations are not more than the predefined T variable.
 spliterFunctionsArray = [] #This array is meant to be a multidimentional array for splitted values
+TC = 0
+caseCounter = 0
+TCarray = []
 
 #the mainCheckFunction() function is doing the necessary checking before the mainCalculativFunction().
 #there is always something to check
 def mainCheckFunction(checkFunctionsProperty):
-        if checkFunctionsProperty == True:
+        if caseCounter != 0:
                 return True
 
 #The function mainCalculativFunction() solves the logical problem of the exercise.
 #Now it works like a SUM function.       
 def mainCalculativFunction(inputProperty):
-    global testSum #This is used to make the mainCheckFunction() bit more interesting but making it to work as add function.
+    global testSum, TC, caseCounter
+    spliterFunction(inputProperty)
     if mainCheckFunction(True):
-        spliterFunction(inputProperty)
-        testSum = testSum + twoDimentionalArrayHandler(spliterFunctionsArray, countForT)
-        return str(testSum)
+        twoDimentionalArrayHandler(TCarray, TC, spliterFunctionsArray[inputProperty][0], spliterFunctionsArray[inputProperty][0] )
+        caseCounter = caseCounter - 1
+    else:
+        testCaseInitiation(spliterFunctionsArray[inputProperty][0], spliterFunctionsArray[inputProperty][0], TC)
+
 
 
 
@@ -55,8 +61,22 @@ def spliterFunction(strValueFromN):
 #it needs to work after the spliterFunction()
 #it works optimaly inside the mainCalculativFunction()
 #initialy works as sum function
-def twoDimentionalArrayHandler(arrayNameParameter, Iterationsnumber):
-    return int(arrayNameParameter[Iterationsnumber][0]) + int(arrayNameParameter[Iterationsnumber][1])
+def twoDimentionalArrayHandler(arrayNameParameter, Iterationsnumber, TiParam, DiParam):
+    arrayNameParameter[Iterationsnumber - 1].append = [int(TiParam), int(DiParam)]
+    
+def twoDimentionalArrayHandler2(arrayNameParameter, Iterationsnumber):
+    #K = arrayNameParameter[Iterationsnumber - 1][0]
+    #for i in arrayNameParameter[Iterationsnumber - 1]:
+    #    if #HERE IS WHERE I DROPPED
+    pass
+
+
+
+def testCaseInitiation(NLinesForCaseCounter, KForFreeMins, TCForCase):
+    global caseCounter, TCarray, TC
+    TCarray[TCForCase -1][0].append(KForFreeMins)
+    caseCounter = NLinesForCaseCounter
+    TC = TCForCase - 1
 
 
 #The main iteration, (AKA the main loop), now is the main() function. 
@@ -67,6 +87,7 @@ def main():
         print("itIsTheFirstLine now is " + str(itIsTheFirstLine))
         if itIsTheFirstLine == True:
             firstLineCorrection(N)
+            N = TC
         else:
             result = mainCalculativFunction(N)
             countForT += 1
