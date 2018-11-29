@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4b2ea5f-239d-4b04-9556-bc1a535e9bfd" name="Default" comment="" />
+    <list default="true" id="ba508574-2ccf-448f-b3b2-23ba02e2d857" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,12 +10,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="coins.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/coins.py">
+    <leaf>
+      <file leaf-file-name="twtclose.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/twtclose.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="221">
+              <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -32,13 +32,13 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/coins.py" />
+        <option value="$PROJECT_DIR$/twtclose.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="334" />
-    <option name="y" value="71" />
+    <option name="y" value="5" />
     <option name="width" value="965" />
     <option name="height" value="688" />
   </component>
@@ -51,8 +51,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="COINS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="COINS" type="462c0819:PsiDirectoryNode" />
+              <item name="TWTCLOSE" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TWTCLOSE" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -74,8 +74,8 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="coins" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="COINS" />
+    <configuration name="twtclose" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TWTCLOSE" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -86,7 +86,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/coins.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/twtclose.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +94,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.coins" />
+        <item itemvalue="Python.twtclose" />
       </list>
     </recent_temporary>
   </component>
@@ -103,53 +103,46 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b4b2ea5f-239d-4b04-9556-bc1a535e9bfd" name="Default" comment="" />
-      <created>1543438682272</created>
+      <changelist id="ba508574-2ccf-448f-b3b2-23ba02e2d857" name="Default" comment="" />
+      <created>1543528971208</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1543438682272</updated>
+      <updated>1543528971208</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="334" y="71" width="965" height="688" extended-state="0" />
+    <frame x="334" y="5" width="965" height="688" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973656" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="R Packages" order="3" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="right" id="R Packages" />
+      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32984293" />
+      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/coins.py">
+    <entry file="file://$PROJECT_DIR$/twtclose.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
         </state>
       </provider>
     </entry>
